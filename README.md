@@ -153,6 +153,7 @@ the domain registration and DNS management in a simple way.
 * [SteadIP](https://steadip.com/) - Offers both free and paid tunneling services. SteadIP Anchor gives your tunnel a dedicated IPv4 address, so your endpoint keeps a stable public IP instead of sharing one.
 
 * [ProxyLink](https://proxylink.dev/) - Exposes services behind NAT/CGNAT via HTTP/HTTPS/TCP/UDP links with automatic HTTPS, but the tunnel runs on the router or gateway rather than per-host: one WireGuard peer covers the whole LAN and any additional VLANs, so devices that can't run a client (NVRs, PBXs, managed switches) are reachable without installing anything on them. Also provides browser-based RDP, VNC and SSH sessions to those devices. Aimed at MSPs and IT teams rather than dev tunnels. Closed source, EU-hosted. Free during early access.
+* [Fieldhand](https://fieldhand.dev/) [![fieldhand-agent github stars badge](https://img.shields.io/github/stars/Abnersouza7/fieldhand-agent?style=flat)](https://github.com/Abnersouza7/fieldhand-agent/stargazers) - Hosted remote access for Linux devices behind CGNAT/4G. The agent dials one WebSocket over TLS on 443; nothing listens on the device. Browser shell, `fh ssh` and `fh forward` for any local port, and a device's local web UI on a private HTTPS link. Static Go binary. Agent and CLI are Apache-2.0; the server is closed. Free for 5 devices.
 
 # Overlay networks and other advanced tools
 
